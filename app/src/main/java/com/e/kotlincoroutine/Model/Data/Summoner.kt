@@ -1,6 +1,7 @@
 package com.e.kotlincoroutine.Model.Data
 
 class Summoner {
+
     var accountId: String? = null
     var profileIconId: String? = null
     var revisionDate: String? = null
@@ -12,4 +13,5 @@ class Summoner {
     override fun toString(): String {
         return "[accountId = $accountId, profileIconId = $profileIconId, revisionDate = $revisionDate, name = $name, puuid = $puuid, id = $id, summonerLevel = $summonerLevel]"
     }
+
 }

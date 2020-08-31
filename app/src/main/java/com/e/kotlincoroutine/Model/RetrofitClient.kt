@@ -4,11 +4,10 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitClient {
+
     private var instance : Retrofit? = null
 
-    fun getServer(): SummonerAPI = instance!!.create(
-        SummonerAPI::class.java)
-
+    fun getServer(): SummonerAPI = instance!!.create(SummonerAPI::class.java)
 
     fun getInstance() : Retrofit {
         if(instance == null){
@@ -19,4 +18,5 @@ object RetrofitClient {
         }
         return instance!!
     }
+
 }

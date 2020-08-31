@@ -10,6 +10,6 @@ interface SummonerAPI {
     suspend fun getSummoner(
         @Path("summonerName") summonerName : String,
         @Query("api_key") api_key : String
-    ): Response<Summoner>
+    ) : Response<Summoner>
 
 }
