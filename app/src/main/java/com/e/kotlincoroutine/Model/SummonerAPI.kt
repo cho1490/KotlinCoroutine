@@ -1,5 +1,6 @@
 package com.e.kotlincoroutine.Model
 
+import com.e.kotlincoroutine.Model.Data.MatchInfo
 import com.e.kotlincoroutine.Model.Data.MatchRecord
 import com.e.kotlincoroutine.Model.Data.Summoner
 import retrofit2.Response
@@ -18,4 +19,11 @@ interface SummonerAPI {
         @Path("encryptedAccountId") encryptedAccountId : String,
         @Query("api_key") api_key : String
     ) : Response<MatchRecord>
+
+    @GET("match/v4/matches/{matchId}")
+    suspend fun getMatchInfo(
+        @Path("matchId") matchId : String,
+        @Query("api_key") api_key : String
+    ) : Response<MatchInfo>
+
 }
