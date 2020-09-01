@@ -1,6 +1,6 @@
 package com.e.kotlincoroutine.Model.Data
 
-class MatchInfo {
+class Match {
 
     var gameId : Long? = null
     var platformId : String? = null
@@ -17,7 +17,6 @@ class MatchInfo {
     class Team{
 
     }
-
 
 }
 

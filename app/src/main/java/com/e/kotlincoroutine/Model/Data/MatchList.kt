@@ -1,10 +1,10 @@
 package com.e.kotlincoroutine.Model.Data
 
-class MatchRecord {
+class MatchList {
 
-        var matches : ArrayList<Match>? = null
+        var matches : ArrayList<MatchReference>? = null
 
-        class Match{
+        class MatchReference{
 
                 var platformId: String? = null
                 var gameId: Long? = null
